@@ -11,8 +11,8 @@
 #include <JuceHeader.h>
 #include "PluginProcessor.h"
 #include "Background/Background.h"
-#include "Oscilliscope/OScopeComponent.h"
-#include "Oscilliscope/OScopeComponent2.h"
+#include "Oscilloscope/OScopeComponent.h"
+#include "Oscilloscope/OScopeComponent2.h"
 #include "ChannelControls/CH1.h"
 #include "ChannelControls/CH2.h"
 #include "GlobalControls/Global.h"

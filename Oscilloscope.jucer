@@ -20,15 +20,15 @@
         <FILE id="dl62Wl" name="Global.cpp" compile="1" resource="0" file="Source/GlobalControls/Global.cpp"/>
         <FILE id="VMwOuL" name="Global.h" compile="0" resource="0" file="Source/GlobalControls/Global.h"/>
       </GROUP>
-      <GROUP id="{68B37DA8-4B0E-5701-C2E2-C4915844C1E4}" name="Oscilliscope">
-        <FILE id="IpB1bI" name="OScopeComponent.cpp" compile="1" resource="0"
-              file="Source/Oscilliscope/OScopeComponent.cpp"/>
-        <FILE id="A3mEYQ" name="OScopeComponent.h" compile="0" resource="0"
-              file="Source/Oscilliscope/OScopeComponent.h"/>
-        <FILE id="tA8bw2" name="OScopeComponent2.cpp" compile="1" resource="0"
-              file="Source/Oscilliscope/OScopeComponent2.cpp"/>
-        <FILE id="O5HAGC" name="OScopeComponent2.h" compile="0" resource="0"
-              file="Source/Oscilliscope/OScopeComponent2.h"/>
+      <GROUP id="{2314244A-5B87-0363-11E7-2A8D07A68C4B}" name="Oscilloscope">
+        <FILE id="Ce5GiW" name="OScopeComponent.cpp" compile="1" resource="0"
+              file="Source/Oscilloscope/OScopeComponent.cpp"/>
+        <FILE id="DcoxAw" name="OScopeComponent.h" compile="0" resource="0"
+              file="Source/Oscilloscope/OScopeComponent.h"/>
+        <FILE id="TN6Bdg" name="OScopeComponent2.cpp" compile="1" resource="0"
+              file="Source/Oscilloscope/OScopeComponent2.cpp"/>
+        <FILE id="o5zjDt" name="OScopeComponent2.h" compile="0" resource="0"
+              file="Source/Oscilloscope/OScopeComponent2.h"/>
       </GROUP>
       <GROUP id="{80B1B15F-A69D-ED61-CCEE-A1AF3BEF3460}" name="Images">
         <GROUP id="{8E4F56D0-8699-CAB9-B70B-936EABB89F48}" name="CH_1_KNOBS">
