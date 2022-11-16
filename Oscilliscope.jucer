@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="fDD87g" name="Oscilliscope" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              pluginManufacturer="OSC Audio" bundleIdentifier="com.OSCaudio.Oscilliscope"
+              pluginVST3Category="Analyzer">
+  <MAINGROUP id="Hldnru" name="Oscilliscope">
+    <GROUP id="{455D502C-E7BE-6AC4-F933-AB86C5B67942}" name="Source">
+      <GROUP id="{7ACB6D85-187D-5F13-8152-702EBDBA049C}" name="Background">
+        <FILE id="K18kc8" name="Background.cpp" compile="1" resource="0" file="Source/Background/Background.cpp"/>
+        <FILE id="A87Hju" name="Background.h" compile="0" resource="0" file="Source/Background/Background.h"/>
+      </GROUP>
+      <GROUP id="{14962584-12D2-0F03-F724-22ADFEEE13E6}" name="ChannelControls">
+        <FILE id="FlPYBK" name="CH1.cpp" compile="1" resource="0" file="Source/ChannelControls/CH1.cpp"/>
+        <FILE id="k0p0XL" name="CH1.h" compile="0" resource="0" file="Source/ChannelControls/CH1.h"/>
+        <FILE id="MGJVeL" name="CH2.cpp" compile="1" resource="0" file="Source/ChannelControls/CH2.cpp"/>
+        <FILE id="NBUWKt" name="CH2.h" compile="0" resource="0" file="Source/ChannelControls/CH2.h"/>
+      </GROUP>
+      <GROUP id="{3DD2CF39-1144-DBA2-6C7D-0A20AF9146EE}" name="GlobalControls">
+        <FILE id="dl62Wl" name="Global.cpp" compile="1" resource="0" file="Source/GlobalControls/Global.cpp"/>
+        <FILE id="VMwOuL" name="Global.h" compile="0" resource="0" file="Source/GlobalControls/Global.h"/>
+      </GROUP>
+      <GROUP id="{68B37DA8-4B0E-5701-C2E2-C4915844C1E4}" name="Oscilliscope">
+        <FILE id="IpB1bI" name="OScopeComponent.cpp" compile="1" resource="0"
+              file="Source/Oscilliscope/OScopeComponent.cpp"/>
+        <FILE id="A3mEYQ" name="OScopeComponent.h" compile="0" resource="0"
+              file="Source/Oscilliscope/OScopeComponent.h"/>
+        <FILE id="tA8bw2" name="OScopeComponent2.cpp" compile="1" resource="0"
+              file="Source/Oscilliscope/OScopeComponent2.cpp"/>
+        <FILE id="O5HAGC" name="OScopeComponent2.h" compile="0" resource="0"
+              file="Source/Oscilliscope/OScopeComponent2.h"/>
+      </GROUP>
+      <GROUP id="{80B1B15F-A69D-ED61-CCEE-A1AF3BEF3460}" name="Images">
+        <GROUP id="{8E4F56D0-8699-CAB9-B70B-936EABB89F48}" name="CH_1_KNOBS">
+          <GROUP id="{BC67BED8-42C8-A1B6-4666-3FEC456BA5C2}" name="HORIZONTAL">
+            <GROUP id="{726FFFAA-2C0A-B99C-84A4-D6ACB4AAD119}" name="OFFSET">
+              <FILE id="Rt82O3" name="CH1Hoffset_0000.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/HORIZONTAL/OFFSET/CH1Hoffset_0000.png"/>
+              <FILE id="qVOuxA" name="CH1Hoffset_0001.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/HORIZONTAL/OFFSET/CH1Hoffset_0001.png"/>
+              <FILE id="eOgWDv" name="CH1Hoffset_0002.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/HORIZONTAL/OFFSET/CH1Hoffset_0002.png"/>
+              <FILE id="rzMvfj" name="CH1Hoffset_0003.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/HORIZONTAL/OFFSET/CH1Hoffset_0003.png"/>
+              <FILE id="kVclYj" name="CH1Hoffset_0004.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/HORIZONTAL/OFFSET/CH1Hoffset_0004.png"/>
+              <FILE id="zZgX54" name="CH1Hoffset_0005.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/HORIZONTAL/OFFSET/CH1Hoffset_0005.png"/>
+              <FILE id="vTs81c" name="CH1Hoffset_0006.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/HORIZONTAL/OFFSET/CH1Hoffset_0006.png"/>
+              <FILE id="qKRQJo" name="CH1Hoffset_0007.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/HORIZONTAL/OFFSET/CH1Hoffset_0007.png"/>
+              <FILE id="eHYKD2" name="CH1Hoffset_0008.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/HORIZONTAL/OFFSET/CH1Hoffset_0008.png"/>
+              <FILE id="hO0sbv" name="CH1Hoffset_0009.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/HORIZONTAL/OFFSET/CH1Hoffset_0009.png"/>
+              <FILE id="NmfVpu" name="CH1Hoffset_0010.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/HORIZONTAL/OFFSET/CH1Hoffset_0010.png"/>
+            </GROUP>
+            <GROUP id="{21D63B35-7B04-839D-DFE5-C90A6302F18D}" name="SECONDS">
+              <FILE id="QB8Ocg" name="CH1Seconds_0000.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/HORIZONTAL/SECONDS/CH1Seconds_0000.png"/>
+              <FILE id="TL0gkw" name="CH1Seconds_0001.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/HORIZONTAL/SECONDS/CH1Seconds_0001.png"/>
+              <FILE id="gPXhFm" name="CH1Seconds_0002.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/HORIZONTAL/SECONDS/CH1Seconds_0002.png"/>
+              <FILE id="yv584i" name="CH1Seconds_0003.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/HORIZONTAL/SECONDS/CH1Seconds_0003.png"/>
+              <FILE id="eiyrOt" name="CH1Seconds_0004.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/HORIZONTAL/SECONDS/CH1Seconds_0004.png"/>
+              <FILE id="ogskAO" name="CH1Seconds_0005.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/HORIZONTAL/SECONDS/CH1Seconds_0005.png"/>
+              <FILE id="mGvFMv" name="CH1Seconds_0006.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/HORIZONTAL/SECONDS/CH1Seconds_0006.png"/>
+              <FILE id="OpuX6g" name="CH1Seconds_0007.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/HORIZONTAL/SECONDS/CH1Seconds_0007.png"/>
+              <FILE id="Tk1dMf" name="CH1Seconds_0008.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/HORIZONTAL/SECONDS/CH1Seconds_0008.png"/>
+              <FILE id="kJ68b5" name="CH1Seconds_0009.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/HORIZONTAL/SECONDS/CH1Seconds_0009.png"/>
+              <FILE id="ydUHHq" name="CH1Seconds_0010.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/HORIZONTAL/SECONDS/CH1Seconds_0010.png"/>
+            </GROUP>
+          </GROUP>
+          <GROUP id="{8B6E0A27-259E-4BB3-F3D8-EC332E19A40F}" name="OVERLAY">
+            <FILE id="NyuSDn" name="CH1OVERLAY_OFF.png" compile="0" resource="1"
+                  file="Images/CH_1_KNOBS/OVERLAY/CH1OVERLAY_OFF.png"/>
+            <FILE id="XlpU66" name="CH1OVERLAY_ON.png" compile="0" resource="1"
+                  file="Images/CH_1_KNOBS/OVERLAY/CH1OVERLAY_ON.png"/>
+          </GROUP>
+          <GROUP id="{350427E8-F36E-C914-2D6C-59EE65C5A162}" name="TOGGLE">
+            <FILE id="xJ5rOm" name="CH1TOGGLE_OFF.png" compile="0" resource="1"
+                  file="Images/CH_1_KNOBS/TOGGLE/CH1TOGGLE_OFF.png"/>
+            <FILE id="riECuc" name="CH1TOGGLE_ON.png" compile="0" resource="1"
+                  file="Images/CH_1_KNOBS/TOGGLE/CH1TOGGLE_ON.png"/>
+          </GROUP>
+          <GROUP id="{34EB9434-81F6-3375-6B68-E61BFE9AD98E}" name="VERTICAL">
+            <GROUP id="{4D986FD9-A182-208C-9813-2747DF215297}" name="OFFSET">
+              <FILE id="pAzpyR" name="CH1Voffset_0000.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/VERTICAL/OFFSET/CH1Voffset_0000.png"/>
+              <FILE id="vwSynB" name="CH1Voffset_0001.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/VERTICAL/OFFSET/CH1Voffset_0001.png"/>
+              <FILE id="p22OC5" name="CH1Voffset_0002.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/VERTICAL/OFFSET/CH1Voffset_0002.png"/>
+              <FILE id="e7Tjwa" name="CH1Voffset_0003.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/VERTICAL/OFFSET/CH1Voffset_0003.png"/>
+              <FILE id="ax4ozW" name="CH1Voffset_0004.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/VERTICAL/OFFSET/CH1Voffset_0004.png"/>
+              <FILE id="IeaH96" name="CH1Voffset_0005.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/VERTICAL/OFFSET/CH1Voffset_0005.png"/>
+              <FILE id="s9SSh5" name="CH1Voffset_0006.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/VERTICAL/OFFSET/CH1Voffset_0006.png"/>
+              <FILE id="ffKMSk" name="CH1Voffset_0007.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/VERTICAL/OFFSET/CH1Voffset_0007.png"/>
+              <FILE id="f5VmYw" name="CH1Voffset_0008.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/VERTICAL/OFFSET/CH1Voffset_0008.png"/>
+              <FILE id="xl2bkA" name="CH1Voffset_0009.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/VERTICAL/OFFSET/CH1Voffset_0009.png"/>
+              <FILE id="Oz2U9C" name="CH1Voffset_0010.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/VERTICAL/OFFSET/CH1Voffset_0010.png"/>
+            </GROUP>
+            <GROUP id="{80C1FD02-C1DE-2385-7770-BF23EFA90800}" name="VOLTS">
+              <FILE id="hvahAW" name="CH1Volts_0000.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/VERTICAL/VOLTS/CH1Volts_0000.png"/>
+              <FILE id="UfIljI" name="CH1Volts_0001.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/VERTICAL/VOLTS/CH1Volts_0001.png"/>
+              <FILE id="Vfhora" name="CH1Volts_0002.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/VERTICAL/VOLTS/CH1Volts_0002.png"/>
+              <FILE id="uKk21V" name="CH1Volts_0003.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/VERTICAL/VOLTS/CH1Volts_0003.png"/>
+              <FILE id="AYZbH1" name="CH1Volts_0004.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/VERTICAL/VOLTS/CH1Volts_0004.png"/>
+              <FILE id="yRviEB" name="CH1Volts_0005.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/VERTICAL/VOLTS/CH1Volts_0005.png"/>
+              <FILE id="A2dyV6" name="CH1Volts_0006.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/VERTICAL/VOLTS/CH1Volts_0006.png"/>
+              <FILE id="qoePUr" name="CH1Volts_0007.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/VERTICAL/VOLTS/CH1Volts_0007.png"/>
+              <FILE id="WeqXM7" name="CH1Volts_0008.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/VERTICAL/VOLTS/CH1Volts_0008.png"/>
+              <FILE id="JzAcZB" name="CH1Volts_0009.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/VERTICAL/VOLTS/CH1Volts_0009.png"/>
+              <FILE id="B5DVrx" name="CH1Volts_0010.png" compile="0" resource="1"
+                    file="Images/CH_1_KNOBS/VERTICAL/VOLTS/CH1Volts_0010.png"/>
+            </GROUP>
+          </GROUP>
+        </GROUP>
+        <GROUP id="{BAEE672A-5527-8D02-8A55-48315389C502}" name="CH_2_KNOBS">
+          <GROUP id="{BEBEC079-0268-77E7-5301-28B84265369A}" name="HORIZONTAL">
+            <GROUP id="{C34F2C77-E196-E462-3EA8-87FED2C36B2E}" name="OFFSET">
+              <FILE id="JEiMYc" name="CH2Hoffset_0000.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/HORIZONTAL/OFFSET/CH2Hoffset_0000.png"/>
+              <FILE id="a7d75q" name="CH2Hoffset_0001.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/HORIZONTAL/OFFSET/CH2Hoffset_0001.png"/>
+              <FILE id="iSTWz3" name="CH2Hoffset_0002.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/HORIZONTAL/OFFSET/CH2Hoffset_0002.png"/>
+              <FILE id="tJ87Zm" name="CH2Hoffset_0003.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/HORIZONTAL/OFFSET/CH2Hoffset_0003.png"/>
+              <FILE id="QOZ040" name="CH2Hoffset_0004.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/HORIZONTAL/OFFSET/CH2Hoffset_0004.png"/>
+              <FILE id="MxAYsz" name="CH2Hoffset_0005.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/HORIZONTAL/OFFSET/CH2Hoffset_0005.png"/>
+              <FILE id="Upfemi" name="CH2Hoffset_0006.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/HORIZONTAL/OFFSET/CH2Hoffset_0006.png"/>
+              <FILE id="cBaAIm" name="CH2Hoffset_0007.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/HORIZONTAL/OFFSET/CH2Hoffset_0007.png"/>
+              <FILE id="dhdRni" name="CH2Hoffset_0008.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/HORIZONTAL/OFFSET/CH2Hoffset_0008.png"/>
+              <FILE id="lQ8msv" name="CH2Hoffset_0009.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/HORIZONTAL/OFFSET/CH2Hoffset_0009.png"/>
+              <FILE id="sjRGcC" name="CH2Hoffset_0010.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/HORIZONTAL/OFFSET/CH2Hoffset_0010.png"/>
+            </GROUP>
+            <GROUP id="{AAEF7B38-4A42-CE07-DB61-E21BBE3487E1}" name="SECONDS">
+              <FILE id="yH7l2n" name="CH2Seconds_0000.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/HORIZONTAL/SECONDS/CH2Seconds_0000.png"/>
+              <FILE id="ZjdmB9" name="CH2Seconds_0001.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/HORIZONTAL/SECONDS/CH2Seconds_0001.png"/>
+              <FILE id="qKxuaH" name="CH2Seconds_0002.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/HORIZONTAL/SECONDS/CH2Seconds_0002.png"/>
+              <FILE id="EBF7Fb" name="CH2Seconds_0003.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/HORIZONTAL/SECONDS/CH2Seconds_0003.png"/>
+              <FILE id="kIze3A" name="CH2Seconds_0004.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/HORIZONTAL/SECONDS/CH2Seconds_0004.png"/>
+              <FILE id="LOZss0" name="CH2Seconds_0005.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/HORIZONTAL/SECONDS/CH2Seconds_0005.png"/>
+              <FILE id="IShsNu" name="CH2Seconds_0006.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/HORIZONTAL/SECONDS/CH2Seconds_0006.png"/>
+              <FILE id="DTljVW" name="CH2Seconds_0007.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/HORIZONTAL/SECONDS/CH2Seconds_0007.png"/>
+              <FILE id="Mm3tpD" name="CH2Seconds_0008.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/HORIZONTAL/SECONDS/CH2Seconds_0008.png"/>
+              <FILE id="TRa86x" name="CH2Seconds_0009.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/HORIZONTAL/SECONDS/CH2Seconds_0009.png"/>
+              <FILE id="w8BPjd" name="CH2Seconds_0010.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/HORIZONTAL/SECONDS/CH2Seconds_0010.png"/>
+            </GROUP>
+          </GROUP>
+          <GROUP id="{876FECF9-FADB-8321-C20E-208CE0EFC152}" name="OVERLAY">
+            <FILE id="ppBY4j" name="CH2OVERLAY_OFF.png" compile="0" resource="1"
+                  file="Images/CH_2_KNOBS/OVERLAY/CH2OVERLAY_OFF.png"/>
+            <FILE id="ZQjGhW" name="CH2OVERLAY_ON.png" compile="0" resource="1"
+                  file="Images/CH_2_KNOBS/OVERLAY/CH2OVERLAY_ON.png"/>
+          </GROUP>
+          <GROUP id="{14E8439F-7356-5B86-F384-61F4BCA2DC4F}" name="TOGGLE">
+            <FILE id="cQa6gU" name="CH2TOGGLE_OFF.png" compile="0" resource="1"
+                  file="Images/CH_2_KNOBS/TOGGLE/CH2TOGGLE_OFF.png"/>
+            <FILE id="hPkuma" name="CH2TOGGLE_ON.png" compile="0" resource="1"
+                  file="Images/CH_2_KNOBS/TOGGLE/CH2TOGGLE_ON.png"/>
+          </GROUP>
+          <GROUP id="{5D11B0D9-F3CE-E7F9-FE19-B72F69D3CC8A}" name="VERTICAL">
+            <GROUP id="{C1B3B274-0CDE-A1C0-0363-C775160C71CB}" name="OFFSET">
+              <FILE id="hjSd57" name="CH2Voffset_0000.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/VERTICAL/OFFSET/CH2Voffset_0000.png"/>
+              <FILE id="blZYrz" name="CH2Voffset_0001.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/VERTICAL/OFFSET/CH2Voffset_0001.png"/>
+              <FILE id="RWTj1b" name="CH2Voffset_0002.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/VERTICAL/OFFSET/CH2Voffset_0002.png"/>
+              <FILE id="y1sTKf" name="CH2Voffset_0003.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/VERTICAL/OFFSET/CH2Voffset_0003.png"/>
+              <FILE id="FTUsUt" name="CH2Voffset_0004.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/VERTICAL/OFFSET/CH2Voffset_0004.png"/>
+              <FILE id="SI38TH" name="CH2Voffset_0005.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/VERTICAL/OFFSET/CH2Voffset_0005.png"/>
+              <FILE id="HqHfwx" name="CH2Voffset_0006.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/VERTICAL/OFFSET/CH2Voffset_0006.png"/>
+              <FILE id="c9O8K7" name="CH2Voffset_0007.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/VERTICAL/OFFSET/CH2Voffset_0007.png"/>
+              <FILE id="TPzFeN" name="CH2Voffset_0008.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/VERTICAL/OFFSET/CH2Voffset_0008.png"/>
+              <FILE id="TpC47p" name="CH2Voffset_0009.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/VERTICAL/OFFSET/CH2Voffset_0009.png"/>
+              <FILE id="ezm6M4" name="CH2Voffset_0010.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/VERTICAL/OFFSET/CH2Voffset_0010.png"/>
+            </GROUP>
+            <GROUP id="{C5F330BF-A757-B737-BE99-8376BFEE6A86}" name="VOLTS">
+              <FILE id="MEqrh0" name="CH2Volts_0000.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/VERTICAL/VOLTS/CH2Volts_0000.png"/>
+              <FILE id="NFQlXF" name="CH2Volts_0001.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/VERTICAL/VOLTS/CH2Volts_0001.png"/>
+              <FILE id="Qhsq8l" name="CH2Volts_0002.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/VERTICAL/VOLTS/CH2Volts_0002.png"/>
+              <FILE id="TjgRYR" name="CH2Volts_0003.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/VERTICAL/VOLTS/CH2Volts_0003.png"/>
+              <FILE id="OZHu3f" name="CH2Volts_0004.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/VERTICAL/VOLTS/CH2Volts_0004.png"/>
+              <FILE id="SLOwGN" name="CH2Volts_0005.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/VERTICAL/VOLTS/CH2Volts_0005.png"/>
+              <FILE id="hfPbie" name="CH2Volts_0006.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/VERTICAL/VOLTS/CH2Volts_0006.png"/>
+              <FILE id="WLxGeP" name="CH2Volts_0007.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/VERTICAL/VOLTS/CH2Volts_0007.png"/>
+              <FILE id="HyXI1k" name="CH2Volts_0008.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/VERTICAL/VOLTS/CH2Volts_0008.png"/>
+              <FILE id="uODZKu" name="CH2Volts_0009.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/VERTICAL/VOLTS/CH2Volts_0009.png"/>
+              <FILE id="kRv2w6" name="CH2Volts_0010.png" compile="0" resource="1"
+                    file="Images/CH_2_KNOBS/VERTICAL/VOLTS/CH2Volts_0010.png"/>
+            </GROUP>
+          </GROUP>
+        </GROUP>
+        <GROUP id="{86CC8537-CD3F-4877-E839-391AE094389B}" name="GLOBAL_CONTROLS">
+          <GROUP id="{7EB26CCD-9B99-81D3-30E0-46FDC374A92F}" name="GAIN">
+            <FILE id="dzpxm9" name="Gain_0000.png" compile="0" resource="1" file="Images/GLOBAL_CONTROLS/GAIN/Gain_0000.png"/>
+            <FILE id="X2fMiR" name="Gain_0001.png" compile="0" resource="1" file="Images/GLOBAL_CONTROLS/GAIN/Gain_0001.png"/>
+            <FILE id="u4AJNC" name="Gain_0002.png" compile="0" resource="1" file="Images/GLOBAL_CONTROLS/GAIN/Gain_0002.png"/>
+            <FILE id="r29AuC" name="Gain_0003.png" compile="0" resource="1" file="Images/GLOBAL_CONTROLS/GAIN/Gain_0003.png"/>
+            <FILE id="cak1j1" name="Gain_0004.png" compile="0" resource="1" file="Images/GLOBAL_CONTROLS/GAIN/Gain_0004.png"/>
+            <FILE id="zUYr1j" name="Gain_0005.png" compile="0" resource="1" file="Images/GLOBAL_CONTROLS/GAIN/Gain_0005.png"/>
+            <FILE id="Lw1QQ7" name="Gain_0006.png" compile="0" resource="1" file="Images/GLOBAL_CONTROLS/GAIN/Gain_0006.png"/>
+            <FILE id="lFbs5q" name="Gain_0007.png" compile="0" resource="1" file="Images/GLOBAL_CONTROLS/GAIN/Gain_0007.png"/>
+            <FILE id="iwSL3G" name="Gain_0008.png" compile="0" resource="1" file="Images/GLOBAL_CONTROLS/GAIN/Gain_0008.png"/>
+            <FILE id="cPkgMW" name="Gain_0009.png" compile="0" resource="1" file="Images/GLOBAL_CONTROLS/GAIN/Gain_0009.png"/>
+            <FILE id="sQo3yJ" name="Gain_0010.png" compile="0" resource="1" file="Images/GLOBAL_CONTROLS/GAIN/Gain_0010.png"/>
+          </GROUP>
+          <GROUP id="{7712F118-BB6E-3DAE-B3CD-3867B9FC6F5A}" name="MONO_STEREO">
+            <FILE id="p2mfwq" name="MONO_OFF.png" compile="0" resource="1" file="Images/GLOBAL_CONTROLS/MONO_STEREO/MONO_OFF.png"/>
+            <FILE id="S8HiMw" name="MONO_ON.png" compile="0" resource="1" file="Images/GLOBAL_CONTROLS/MONO_STEREO/MONO_ON.png"/>
+          </GROUP>
+          <GROUP id="{D4D34FFC-3413-7A10-C499-1AAB3AAF21B8}" name="PHASE">
+            <FILE id="fHm5DH" name="PHASE_OFF.png" compile="0" resource="1" file="Images/GLOBAL_CONTROLS/PHASE/PHASE_OFF.png"/>
+            <FILE id="bEcGEi" name="PHASE_ON.png" compile="0" resource="1" file="Images/GLOBAL_CONTROLS/PHASE/PHASE_ON.png"/>
+          </GROUP>
+          <GROUP id="{46270145-85CC-5A2F-32E0-37000BE638A4}" name="POWER">
+            <FILE id="PQe0Uo" name="POWER_OFF.png" compile="0" resource="1" file="Images/GLOBAL_CONTROLS/POWER/POWER_OFF.png"/>
+            <FILE id="lJ4zcB" name="POWER_ON.png" compile="0" resource="1" file="Images/GLOBAL_CONTROLS/POWER/POWER_ON.png"/>
+          </GROUP>
+          <GROUP id="{0BCAC223-2051-DC19-E20F-5D7D5A4A89E8}" name="ROTATION">
+            <FILE id="sxxQt4" name="Rotation_0000.png" compile="0" resource="1"
+                  file="Images/GLOBAL_CONTROLS/ROTATION/Rotation_0000.png"/>
+            <FILE id="mJpBaQ" name="Rotation_0001.png" compile="0" resource="1"
+                  file="Images/GLOBAL_CONTROLS/ROTATION/Rotation_0001.png"/>
+            <FILE id="XMkXkT" name="Rotation_0002.png" compile="0" resource="1"
+                  file="Images/GLOBAL_CONTROLS/ROTATION/Rotation_0002.png"/>
+            <FILE id="NKhPoV" name="Rotation_0003.png" compile="0" resource="1"
+                  file="Images/GLOBAL_CONTROLS/ROTATION/Rotation_0003.png"/>
+            <FILE id="Rl4ITD" name="Rotation_0004.png" compile="0" resource="1"
+                  file="Images/GLOBAL_CONTROLS/ROTATION/Rotation_0004.png"/>
+            <FILE id="GArBSB" name="Rotation_0005.png" compile="0" resource="1"
+                  file="Images/GLOBAL_CONTROLS/ROTATION/Rotation_0005.png"/>
+            <FILE id="pmB5iw" name="Rotation_0006.png" compile="0" resource="1"
+                  file="Images/GLOBAL_CONTROLS/ROTATION/Rotation_0006.png"/>
+            <FILE id="zzrjqW" name="Rotation_0007.png" compile="0" resource="1"
+                  file="Images/GLOBAL_CONTROLS/ROTATION/Rotation_0007.png"/>
+            <FILE id="JJnWEd" name="Rotation_0008.png" compile="0" resource="1"
+                  file="Images/GLOBAL_CONTROLS/ROTATION/Rotation_0008.png"/>
+            <FILE id="uKfu7w" name="Rotation_0009.png" compile="0" resource="1"
+                  file="Images/GLOBAL_CONTROLS/ROTATION/Rotation_0009.png"/>
+            <FILE id="a2DGjv" name="Rotation_0010.png" compile="0" resource="1"
+                  file="Images/GLOBAL_CONTROLS/ROTATION/Rotation_0010.png"/>
+          </GROUP>
+          <GROUP id="{A6FB664D-8E8A-9222-BF78-C22BB4C2FDF1}" name="THICKNESS">
+            <FILE id="AfAsUo" name="Thickness_0000.png" compile="0" resource="1"
+                  file="Images/GLOBAL_CONTROLS/THICKNESS/Thickness_0000.png"/>
+            <FILE id="ALTyRi" name="Thickness_0001.png" compile="0" resource="1"
+                  file="Images/GLOBAL_CONTROLS/THICKNESS/Thickness_0001.png"/>
+            <FILE id="TbZrfg" name="Thickness_0002.png" compile="0" resource="1"
+                  file="Images/GLOBAL_CONTROLS/THICKNESS/Thickness_0002.png"/>
+            <FILE id="m1I9oF" name="Thickness_0003.png" compile="0" resource="1"
+                  file="Images/GLOBAL_CONTROLS/THICKNESS/Thickness_0003.png"/>
+            <FILE id="tq2zcJ" name="Thickness_0004.png" compile="0" resource="1"
+                  file="Images/GLOBAL_CONTROLS/THICKNESS/Thickness_0004.png"/>
+            <FILE id="U7UslD" name="Thickness_0005.png" compile="0" resource="1"
+                  file="Images/GLOBAL_CONTROLS/THICKNESS/Thickness_0005.png"/>
+            <FILE id="xHXlyY" name="Thickness_0006.png" compile="0" resource="1"
+                  file="Images/GLOBAL_CONTROLS/THICKNESS/Thickness_0006.png"/>
+            <FILE id="SjtAAv" name="Thickness_0007.png" compile="0" resource="1"
+                  file="Images/GLOBAL_CONTROLS/THICKNESS/Thickness_0007.png"/>
+            <FILE id="KuOccK" name="Thickness_0008.png" compile="0" resource="1"
+                  file="Images/GLOBAL_CONTROLS/THICKNESS/Thickness_0008.png"/>
+            <FILE id="EqpUGt" name="Thickness_0009.png" compile="0" resource="1"
+                  file="Images/GLOBAL_CONTROLS/THICKNESS/Thickness_0009.png"/>
+            <FILE id="c6cOEE" name="Thickness_0010.png" compile="0" resource="1"
+                  file="Images/GLOBAL_CONTROLS/THICKNESS/Thickness_0010.png"/>
+          </GROUP>
+        </GROUP>
+        <GROUP id="{83E63472-E1EA-14EA-1ABF-1C2D8DBA87F9}" name="Icon">
+          <FILE id="ZyWtQM" name="OSC_ICON.png" compile="0" resource="1" file="Images/Icon/OSC_ICON.png"/>
+        </GROUP>
+        <FILE id="Lswe1I" name="Background.png" compile="0" resource="1" file="Images/Background.png"/>
+      </GROUP>
+      <FILE id="TUTded" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="HosxxH" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="BaGPaV" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="c0RwzC" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" bigIcon="ZyWtQM" microphonePermissionNeeded="1"
+               smallIcon="ZyWtQM">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Oscilliscope"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Oscilliscope"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../../modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../../modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../../modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../../modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../../modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../../modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../../modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../../../modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../../modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
