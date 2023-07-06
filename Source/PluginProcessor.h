@@ -174,6 +174,9 @@ public:
     float peakValue2 { 0 };
     float gainValue2 { 0 };
     
+    float windowH { ( 800 / (6.0/3.0) ) };
+    float windowW { 800 };
+    
 private:
     AudioBufferQueue<float> audioBufferQueue, audioBufferQueue2;
     ScopeDataCollector<float> scopeDataCollector { audioBufferQueue };

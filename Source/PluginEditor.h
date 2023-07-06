@@ -17,6 +17,14 @@
 #include "ChannelControls/CH2.h"
 #include "GlobalControls/Global.h"
 
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
+
+#ifndef JUCE_IOS
+#define JUCE_IOS 0 // Define a default value if JUCE_IOS is not defined
+#endif
+
 //==============================================================================
 /**
 */
@@ -80,6 +88,9 @@ public:
     void buttonClicked(juce::Button *button) override;
     
     void timerCallback() override;
+    
+    float sizeX { 800 };
+    float sizeY { (800  / (6.0/3.0) ) };
 
 private:
     OscilliscopeAudioProcessor& audioProcessor;

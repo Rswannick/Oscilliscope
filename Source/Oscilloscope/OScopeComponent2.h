@@ -27,7 +27,7 @@ public:
         : audioBufferQueue (queueToUse)
     {
         sampleData.fill (SampleType (0));
-        setFramesPerSecond (60);
+        setFramesPerSecond (120);
     }
 
     //==============================================================================

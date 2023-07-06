@@ -26,7 +26,7 @@ public:
         : audioBufferQueue (queueToUse)
     {
         sampleData.fill (SampleType (0));
-        setFramesPerSecond (60);
+        setFramesPerSecond (120);
     }
 
     //==============================================================================
@@ -101,7 +101,7 @@ public:
         
         juce::String rmsStringLong = std::to_string(rmsValue);
         juce::String rmsStringShort = rmsStringLong.substring(0, 6);
-        g.setFont(overlay.getHeight() * .80);
+        g.setFont(overlay.getHeight() * .50);
         g.setColour(juce::Colours::white);
         g.drawFittedText("RMS: " + rmsStringShort + " db",overlay.getWidth() * .01, overlay.getY(), overlay.getWidth(), overlay.getHeight(), juce::Justification::left, 1);
         g.drawFittedText("PEAK: " + rmsStringShort + " db", overlay.getWidth() * .35, overlay.getY(), overlay.getWidth(), overlay.getHeight(), juce::Justification::left, 1);

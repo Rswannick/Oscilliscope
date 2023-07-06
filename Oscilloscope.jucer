@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <JUCERPROJECT id="fDD87g" name="Oscilliscope" projectType="audioplug" useAppConfig="0"
-              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="0" jucerFormatVersion="1"
               pluginManufacturer="OSC Audio" bundleIdentifier="com.OSCaudio.Oscilliscope"
-              pluginVST3Category="Analyzer">
+              pluginVST3Category="Analyzer" pluginFormats="buildAU,buildAUv3,buildStandalone,buildVST3"
+              companyName="OSC Audio" companyWebsite="https://oscaudio.netlify.app/"
+              companyEmail="contact@oscaudio.com" pluginManufacturerCode="Osca"
+              pluginCode="scpe">
   <MAINGROUP id="Hldnru" name="Oscilliscope">
     <GROUP id="{455D502C-E7BE-6AC4-F933-AB86C5B67942}" name="Source">
       <GROUP id="{7ACB6D85-187D-5F13-8152-702EBDBA049C}" name="Background">
@@ -347,11 +350,17 @@
             file="Source/PluginEditor.cpp"/>
       <FILE id="c0RwzC" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
     </GROUP>
+    <GROUP id="{3F177531-5B58-BD8A-8737-CF06787A335A}" name="iOSImages">
+      <FILE id="nSccrW" name="OSCSplash.png" compile="0" resource="0" file="iOSImages/OSCSplash.png"
+            xcodeResource="1"/>
+      <FILE id="FbyHSV" name="OSCSplash.storyboard" compile="0" resource="0"
+            file="iOSImages/OSCSplash.storyboard" xcodeResource="1"/>
+    </GROUP>
   </MAINGROUP>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
   <EXPORTFORMATS>
     <XCODE_MAC targetFolder="Builds/MacOSX" bigIcon="ZyWtQM" microphonePermissionNeeded="1"
-               smallIcon="ZyWtQM">
+               smallIcon="ZyWtQM" iosDevelopmentTeamID="DGPQV8YL8X">
       <CONFIGURATIONS>
         <CONFIGURATION isDebug="1" name="Debug" targetName="Oscilliscope"/>
         <CONFIGURATION isDebug="0" name="Release" targetName="Oscilliscope"/>
@@ -372,6 +381,53 @@
         <MODULEPATH id="juce_gui_extra" path="../../../../../../modules"/>
       </MODULEPATHS>
     </XCODE_MAC>
+    <XCODE_IPHONE targetFolder="Builds/iOS" smallIcon="ZyWtQM" bigIcon="ZyWtQM"
+                  microphonePermissionNeeded="1" iosBackgroundAudio="1" iosScreenOrientation="UIInterfaceOrientationLandscapeLeft,UIInterfaceOrientationLandscapeRight"
+                  iPadScreenOrientation="UIInterfaceOrientationLandscapeLeft,UIInterfaceOrientationLandscapeRight"
+                  iosDevelopmentTeamID="DGPQV8YL8X" UIStatusBarHidden="1" UIRequiresFullScreen="1"
+                  iosDeviceFamily="1,2" buildNumber="1" customLaunchStoryboard="OSCSplash"
+                  customXcodeResourceFolders="iOSImages" customPList="&lt;plist&gt; &#10;&#10;&lt;dict&gt; &lt;key&gt;UILaunchStoryboardName&lt;/key&gt; &lt;string&gt;OSCSplash&lt;/string&gt; &#10;&lt;/dict&gt; &#10;&#10;&#10;&lt;/plist&gt; ">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_IPHONE>
+    <VS2019 targetFolder="Builds/VisualStudio2019">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="/Users/ikmultimedia/Documents/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2019>
   </EXPORTFORMATS>
   <MODULES>
     <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>

@@ -58,12 +58,35 @@ OscilliscopeAudioProcessorEditor::OscilliscopeAudioProcessorEditor (Oscilliscope
     //Window Properties
     setResizable(true, true);
     
+    sizeX = audioProcessor.windowW;
+    sizeY = audioProcessor.windowH;
+    
     double ratio = 6.0/3.0;
-    setResizeLimits(400, 400/ratio, 1200, 1200/ratio);
-    getConstrainer()->setFixedAspectRatio(ratio);
-    setSize(800.0,800.0/ratio);
+    
+    if (JUCE_IOS)
+    {
+        auto screenRatio = juce::Desktop::getInstance().getDisplays().getPrimaryDisplay()->scale;
+        ratio = screenRatio;
+        auto screenSize = juce::Desktop::getInstance().getDisplays().getPrimaryDisplay()->userArea;
+        float width = screenSize.getWidth();
+        float height = screenSize.getHeight();
 
-    startTimer(60);
+        sizeX = width;
+        sizeY = height;
+        startTimer(120);
+    }
+    else
+    {
+        ratio = ratio = 6.0/3.0;
+        setResizeLimits(400, 400/ratio, 1200, 1200/ratio);
+        getConstrainer()->setFixedAspectRatio(ratio);
+        startTimer(60);
+    }
+    
+    setSize(sizeX, sizeY);
+
+    
+    
 
 
 }
@@ -78,12 +101,37 @@ OscilliscopeAudioProcessorEditor::~OscilliscopeAudioProcessorEditor()
 //==============================================================================
 void OscilliscopeAudioProcessorEditor::paint (juce::Graphics& g)
 {
-
+    g.setColour(juce::Colours::black);
+    g.fillAll();
 }
 
 void OscilliscopeAudioProcessorEditor::resized()
 {
     auto bounds = getLocalBounds();
+    
+//    if (JUCE_IOS)
+//    {
+////        bounds.setBounds(bounds.getX() + (bounds.getWidth() * .10), bounds.getY(), bounds.getWidth() * .80, bounds.getHeight());
+////
+//        const double targetAspectRatio = 6.0 / 3.0;
+//        double currentAspectRatio = static_cast<double>(bounds.getWidth()) / bounds.getHeight();
+//
+//        if (currentAspectRatio > targetAspectRatio)
+//        {
+//            int newWidth = static_cast<int>(bounds.getHeight() * targetAspectRatio);
+//            int xOffset = (bounds.getWidth() - newWidth) / 2;
+//            bounds.setX(bounds.getX() + xOffset);
+//            bounds.setWidth(newWidth);
+//        }
+//        else if (currentAspectRatio < targetAspectRatio)
+//        {
+//            int newHeight = static_cast<int>(bounds.getWidth() / targetAspectRatio);
+//            int yOffset = (bounds.getHeight() - newHeight) / 2;
+//            bounds.setY(bounds.getY() + yOffset);
+//            bounds.setHeight(newHeight);
+//        }
+//
+//    }
     
     float scopeX = bounds.getWidth() / 16;
     float scopeY = bounds.getHeight() / 6;
@@ -120,6 +168,10 @@ void OscilliscopeAudioProcessorEditor::resized()
     mBypass.setBounds(buttonX, buttonY, buttonW, buttonH);
     //Polarity
     mPolarity.setBounds(buttonX * .835, buttonY, buttonW * .75, buttonH * 1.25);
+    
+    
+    audioProcessor.windowW = bounds.getWidth();
+    audioProcessor.windowH = bounds.getHeight();
     
 }
 
