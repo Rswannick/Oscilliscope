@@ -4,19 +4,16 @@
 
     Background.cpp
     Created: 10 Sep 2022 7:16:16pm
-    Author:  IK Multimedia
+    Author:  Ryan Swannick
 
   ==============================================================================
 */
 
 #include "OScopeComponent.h"
 
-OScopeComponent::OScopeComponent(OscilliscopeAudioProcessor& p): audioProcessor (p), scopeComponent (audioProcessor.getAudioBufferQueue())
+OScopeComponent::OScopeComponent(OscilliscopeAudioProcessor& p): audioProcessor (p), scopeComponent (audioProcessor.cOscilloscope.getAudioBufferQueue())
 {
-    
     addAndMakeVisible(scopeComponent);
-    
-
 }
 
 OScopeComponent::~OScopeComponent()

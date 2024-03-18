@@ -3,7 +3,7 @@
 
     Global.h
     Created: 10 Sep 2022 7:13:26pm
-    Author:  IK Multimedia
+    Author:  Ryan Swannick
 
   ==============================================================================
 */

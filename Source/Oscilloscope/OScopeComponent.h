@@ -3,7 +3,7 @@
 
     ScopeComponent.h
     Created: 10 Sep 2022 8:37:38pm
-    Author:  IK Multimedia
+    Author:  Ryan Swannick
 
   ==============================================================================
 */
@@ -11,6 +11,10 @@
 #pragma once
 #include <JuceHeader.h>
 #include "../PluginProcessor.h"
+
+#ifndef JUCE_IOS
+#define JUCE_IOS 0 // Define a default value if JUCE_IOS is not defined
+#endif
 
 template <typename SampleType>
 
@@ -67,16 +71,12 @@ public:
         
         g.setColour(juce::Colours::dimgrey);
         juce::Array<float> xs;
-        
+                
         for( auto x : xs )
-        {
-            g.drawVerticalLine(x, top, bottom);
-        }
+        { g.drawVerticalLine(x, top, bottom); }
         
         juce::Array<float> gain
-        {
-            -12, -9, -6, -3,  0, 3, 6, 9, 12
-        };
+        {  -12, -9, -6, -3,  0, 3, 6, 9, 12 };
         
         for (auto gDb : gain )
         {
@@ -94,7 +94,6 @@ public:
         
         //Overlay
         g.setColour(juce::Colours::grey);
-
         juce::Rectangle<int> overlay;
         overlay.setBounds(0, getHeight() * .10, getWidth(), getHeight() * .10);
         g.fillRect(overlay);
@@ -102,12 +101,10 @@ public:
         juce::String rmsStringLong = std::to_string(rmsValue);
         juce::String rmsStringShort = rmsStringLong.substring(0, 6);
         g.setFont(overlay.getHeight() * .50);
-        g.setColour(juce::Colours::white);
+        if (peakValue > 0) { g.setColour(juce::Colours::red); }
+        else { g.setColour(juce::Colours::white); }
         g.drawFittedText("RMS: " + rmsStringShort + " db",overlay.getWidth() * .01, overlay.getY(), overlay.getWidth(), overlay.getHeight(), juce::Justification::left, 1);
         g.drawFittedText("PEAK: " + rmsStringShort + " db", overlay.getWidth() * .35, overlay.getY(), overlay.getWidth(), overlay.getHeight(), juce::Justification::left, 1);
-        
-        
-
     }
 
     //==============================================================================
@@ -126,7 +123,6 @@ public:
     float rmsValue = { 0 };
     float peakValue = { 0 };
     
-
 private:
     
     //==============================================================================
@@ -192,7 +188,17 @@ private:
 
         pd.addLineSegment(line1, mThick * 1.10);
         pd.applyTransform(juce::AffineTransform::rotation(mRotation, getWidth() * .50, getHeight() * .50));
-        shadow1.drawForPath(g, pd);
+            
+            
+        if (JUCE_IOS)
+        {
+            
+        }
+        else
+        {
+            shadow1.drawForPath(g, pd);
+        }
+            
 
         p.addLineSegment(line1, mThick);
         p.applyTransform(juce::AffineTransform::rotation(mRotation, getWidth() * .50, getHeight() * .50));

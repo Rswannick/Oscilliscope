@@ -3,7 +3,7 @@
 
     CH2.cpp
     Created: 10 Sep 2022 7:14:03pm
-    Author:  IK Multimedia
+    Author:  Ryan Swannick
 
   ==============================================================================
 */
@@ -16,11 +16,6 @@ CH2Component::CH2Component()
     setSlider(mVOffsetSlider);
     setSlider(mVoltsSlider);
     setSlider(mSecondsSlider);
-    
-    mVOffsetSlider.setLookAndFeel(&lCH2VOffset);
-    mHOffsetSlider.setLookAndFeel(&lCH2HOffset);
-    mVoltsSlider.setLookAndFeel(&lCH2Volts);
-    mSecondsSlider.setLookAndFeel(&lCH2Seconds);
 }
 
 CH2Component::~CH2Component()
@@ -56,8 +51,11 @@ void CH2Component::setSlider (juce::Slider& slider)
     slider.setSliderStyle (juce::Slider::SliderStyle::RotaryHorizontalVerticalDrag);
     slider.setTextBoxStyle (juce::Slider::NoTextBox, true, 50, 25);
     slider.setDoubleClickReturnValue(true, 1.f);
-    slider.setRange(0.0f, 2.f, .1f);
+    slider.setRange(0.0f, 2.f, .01f);
     slider.setValue(1.f);
+    
+    slider.setLookAndFeel(&cLAF.lCH2Volts);
+
     addAndMakeVisible (slider);
 }
 

@@ -1,39 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="fDD87g" name="Oscilliscope" projectType="audioplug" useAppConfig="0"
-              addUsingNamespaceToJuceHeader="0" displaySplashScreen="0" jucerFormatVersion="1"
-              pluginManufacturer="OSC Audio" bundleIdentifier="com.OSCaudio.Oscilliscope"
-              pluginVST3Category="Analyzer" pluginFormats="buildAU,buildAUv3,buildStandalone,buildVST3"
+<JUCERPROJECT id="fDD87g" name="pocketOscilloscope" projectType="audioplug"
+              useAppConfig="0" addUsingNamespaceToJuceHeader="0" displaySplashScreen="0"
+              jucerFormatVersion="1" pluginManufacturer="OSC Audio" bundleIdentifier="com.OSCaudio.pocketOscilloscope"
+              pluginVST3Category="Analyzer" pluginFormats="buildAUv3,buildStandalone"
               companyName="OSC Audio" companyWebsite="https://oscaudio.netlify.app/"
               companyEmail="contact@oscaudio.com" pluginManufacturerCode="Osca"
-              pluginCode="scpe">
-  <MAINGROUP id="Hldnru" name="Oscilliscope">
+              pluginCode="scpe" version="1.0.1">
+  <MAINGROUP id="Hldnru" name="pocketOscilloscope">
     <GROUP id="{455D502C-E7BE-6AC4-F933-AB86C5B67942}" name="Source">
-      <GROUP id="{7ACB6D85-187D-5F13-8152-702EBDBA049C}" name="Background">
-        <FILE id="K18kc8" name="Background.cpp" compile="1" resource="0" file="Source/Background/Background.cpp"/>
-        <FILE id="A87Hju" name="Background.h" compile="0" resource="0" file="Source/Background/Background.h"/>
+      <GROUP id="{7E2F90C5-48C7-78E2-5119-D3F93E25CADA}" name="LookAndFeel">
+        <FILE id="HrnzVV" name="LAF.h" compile="0" resource="0" file="Source/LAF.h"/>
+        <FILE id="A8eCpz" name="LAF.cpp" compile="1" resource="0" file="Source/LAF.cpp"/>
       </GROUP>
-      <GROUP id="{14962584-12D2-0F03-F724-22ADFEEE13E6}" name="ChannelControls">
-        <FILE id="FlPYBK" name="CH1.cpp" compile="1" resource="0" file="Source/ChannelControls/CH1.cpp"/>
-        <FILE id="k0p0XL" name="CH1.h" compile="0" resource="0" file="Source/ChannelControls/CH1.h"/>
-        <FILE id="MGJVeL" name="CH2.cpp" compile="1" resource="0" file="Source/ChannelControls/CH2.cpp"/>
-        <FILE id="NBUWKt" name="CH2.h" compile="0" resource="0" file="Source/ChannelControls/CH2.h"/>
+      <GROUP id="{652F8F7B-F844-5795-7630-F3AB1B16349C}" name="DSP">
+        <FILE id="hS0dG9" name="Oscilloscope_DSP.cpp" compile="1" resource="0"
+              file="Source/Oscilloscope_DSP.cpp"/>
+        <FILE id="lijASD" name="Oscilloscope_DSP.h" compile="0" resource="0"
+              file="Source/Oscilloscope_DSP.h"/>
       </GROUP>
-      <GROUP id="{3DD2CF39-1144-DBA2-6C7D-0A20AF9146EE}" name="GlobalControls">
-        <FILE id="dl62Wl" name="Global.cpp" compile="1" resource="0" file="Source/GlobalControls/Global.cpp"/>
-        <FILE id="VMwOuL" name="Global.h" compile="0" resource="0" file="Source/GlobalControls/Global.h"/>
-      </GROUP>
-      <GROUP id="{2314244A-5B87-0363-11E7-2A8D07A68C4B}" name="Oscilloscope">
-        <FILE id="Ce5GiW" name="OScopeComponent.cpp" compile="1" resource="0"
-              file="Source/Oscilloscope/OScopeComponent.cpp"/>
-        <FILE id="DcoxAw" name="OScopeComponent.h" compile="0" resource="0"
-              file="Source/Oscilloscope/OScopeComponent.h"/>
-        <FILE id="TN6Bdg" name="OScopeComponent2.cpp" compile="1" resource="0"
-              file="Source/Oscilloscope/OScopeComponent2.cpp"/>
-        <FILE id="o5zjDt" name="OScopeComponent2.h" compile="0" resource="0"
-              file="Source/Oscilloscope/OScopeComponent2.h"/>
+      <GROUP id="{1336DC09-DB1D-9D59-297B-E8DDBD9E4C3C}" name="GUI Components">
+        <GROUP id="{2314244A-5B87-0363-11E7-2A8D07A68C4B}" name="Oscilloscope">
+          <FILE id="Ce5GiW" name="OScopeComponent.cpp" compile="1" resource="0"
+                file="Source/Oscilloscope/OScopeComponent.cpp"/>
+          <FILE id="DcoxAw" name="OScopeComponent.h" compile="0" resource="0"
+                file="Source/Oscilloscope/OScopeComponent.h"/>
+          <FILE id="TN6Bdg" name="OScopeComponent2.cpp" compile="1" resource="0"
+                file="Source/Oscilloscope/OScopeComponent2.cpp"/>
+          <FILE id="o5zjDt" name="OScopeComponent2.h" compile="0" resource="0"
+                file="Source/Oscilloscope/OScopeComponent2.h"/>
+        </GROUP>
+        <GROUP id="{3DD2CF39-1144-DBA2-6C7D-0A20AF9146EE}" name="GlobalControls">
+          <FILE id="dl62Wl" name="Global.cpp" compile="1" resource="0" file="Source/GlobalControls/Global.cpp"/>
+          <FILE id="VMwOuL" name="Global.h" compile="0" resource="0" file="Source/GlobalControls/Global.h"/>
+        </GROUP>
+        <GROUP id="{14962584-12D2-0F03-F724-22ADFEEE13E6}" name="ChannelControls">
+          <FILE id="FlPYBK" name="CH1.cpp" compile="1" resource="0" file="Source/ChannelControls/CH1.cpp"/>
+          <FILE id="k0p0XL" name="CH1.h" compile="0" resource="0" file="Source/ChannelControls/CH1.h"/>
+          <FILE id="MGJVeL" name="CH2.cpp" compile="1" resource="0" file="Source/ChannelControls/CH2.cpp"/>
+          <FILE id="NBUWKt" name="CH2.h" compile="0" resource="0" file="Source/ChannelControls/CH2.h"/>
+        </GROUP>
+        <GROUP id="{7ACB6D85-187D-5F13-8152-702EBDBA049C}" name="Background">
+          <FILE id="K18kc8" name="Background.cpp" compile="1" resource="0" file="Source/Background/Background.cpp"/>
+          <FILE id="A87Hju" name="Background.h" compile="0" resource="0" file="Source/Background/Background.h"/>
+        </GROUP>
       </GROUP>
       <GROUP id="{80B1B15F-A69D-ED61-CCEE-A1AF3BEF3460}" name="Images">
+        <FILE id="CwMesV" name="settingsIcon.png" compile="0" resource="1"
+              file="Images/settingsIcon.png"/>
+        <FILE id="rgQS1q" name="Logo.png" compile="0" resource="1" file="Images/Logo.png"/>
         <GROUP id="{8E4F56D0-8699-CAB9-B70B-936EABB89F48}" name="CH_1_KNOBS">
           <GROUP id="{BC67BED8-42C8-A1B6-4666-3FEC456BA5C2}" name="HORIZONTAL">
             <GROUP id="{726FFFAA-2C0A-B99C-84A4-D6ACB4AAD119}" name="OFFSET">

@@ -3,19 +3,15 @@
 
     OScopeComponent2.cpp
     Created: 18 Sep 2022 5:04:01pm
-    Author:  IK Multimedia
-
+    Author:  Ryan Swannick
   ==============================================================================
 */
 
 #include "OScopeComponent2.h"
 
-OScopeComponent2::OScopeComponent2(OscilliscopeAudioProcessor& p): audioProcessor (p), scopeComponent2 (audioProcessor.getAudioBufferQueue2())
+OScopeComponent2::OScopeComponent2(OscilliscopeAudioProcessor& p): audioProcessor (p), scopeComponent2 (audioProcessor.cOscilloscope.getAudioBufferQueue2())
 {
-    
     addAndMakeVisible(scopeComponent2);
-    
-
 }
 
 OScopeComponent2::~OScopeComponent2()

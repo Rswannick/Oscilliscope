@@ -3,7 +3,7 @@
 
     Background.cpp
     Created: 10 Sep 2022 7:16:16pm
-    Author:  IK Multimedia
+    Author:  Ryan Swannick
 
   ==============================================================================
 */

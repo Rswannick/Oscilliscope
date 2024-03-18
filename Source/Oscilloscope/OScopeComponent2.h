@@ -3,7 +3,7 @@
 
     OScopeComponent2.h
     Created: 18 Sep 2022 5:04:01pm
-    Author:  IK Multimedia
+    Author:  Ryan Swannick
 
   ==============================================================================
 */
@@ -12,6 +12,10 @@
 #pragma once
 #include <JuceHeader.h>
 #include "../PluginProcessor.h"
+
+#ifndef JUCE_IOS
+#define JUCE_IOS 0 // Define a default value if JUCE_IOS is not defined
+#endif
 
 template <typename SampleType>
 
@@ -48,22 +52,6 @@ public:
         g.setColour (juce::Colours::yellowgreen);
         auto scopeRect = juce::Rectangle<SampleType> { SampleType (0), SampleType (0), w, h / 2 };
         plot (sampleData.data(), sampleData.size(), g, scopeRect, SampleType (1), h / 4);
-        
-//        //Overlay
-//        g.setColour(juce::Colours::grey);
-//
-//        juce::Rectangle<int> overlay;
-//        overlay.setBounds(0, getHeight() * .10, getWidth(), getHeight() * .10);
-//        g.fillRect(overlay);
-//
-//        juce::String rmsStringLong = std::to_string(rmsValue);
-//        juce::String rmsStringShort = rmsStringLong.substring(0, 6);
-//        g.setFont(overlay.getHeight() * .80);
-//        g.setColour(juce::Colours::white);
-//        g.drawFittedText("RMS: " + rmsStringShort + " db",overlay.getWidth() * .01, overlay.getY(), overlay.getWidth(), overlay.getHeight(), juce::Justification::left, 1);
-//        g.drawFittedText("PEAK: " + rmsStringShort + " db", overlay.getWidth() * .35, overlay.getY(), overlay.getWidth(), overlay.getHeight(), juce::Justification::left, 1);
-//
-//        
 
     }
 
@@ -149,11 +137,19 @@ private:
 
         pd.addLineSegment(line1, mThick2 * 1.10);
         pd.applyTransform(juce::AffineTransform::rotation(mRotation2, getWidth() * .50, getHeight() * .50));
-        shadow1.drawForPath(g, pd);
-
+        
+        if (JUCE_IOS)
+        {
+            
+        }
+        else
+        {
+            shadow1.drawForPath(g, pd);
+        }
+        
         p.addLineSegment(line1, mThick2);
         p.applyTransform(juce::AffineTransform::rotation(mRotation2, getWidth() * .50, getHeight() * .50));
-        g.setColour(juce::Colours::blue);
+        g.setColour(juce::Colours::yellow);
             
         g.fillPath(p);
             
